@@ -4,6 +4,7 @@ import aside from "./components/aside.js";
 import mainCarrousel from "./components/mainCarrousel.js";
 
 import history from "./components/history.js";
+import awards from "./components/awards.js";
 
 import footer from "./components/footer.js";
 
@@ -19,5 +20,6 @@ mainCarrousel.showCarrousel();
 mainCarrousel.showImages();
 
 history.showHistory();
+awards.showAwards();
 
 footer.showFooter();

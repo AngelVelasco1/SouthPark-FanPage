@@ -1,7 +1,7 @@
 export default {
     nav: [
             {
-                title: "Fun Fact",
+                title: "Curious Fact",
                 paragraph: "The character of Butters Stotch was originally intended to be a one-time character, but he proved to be so popular with the show's creators and viewers that he became a regular character on the show. In fact, Butters has appeared in more episodes than some of the show's original main characters like Kenny and Chef. Additionally."
             },
           {

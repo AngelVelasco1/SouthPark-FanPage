@@ -8,9 +8,9 @@ export default {
     },
     showBannerInfo(){
         document.querySelector("#banner").insertAdjacentHTML("beforeend", `
-        <h1 class="display-5 text-white">${this.title}</h1>
+        <h1 class="display-5 text-white" style="text-transform:uppercase">${this.title}</h1>
         <p class="lead my-3">${this.description}</p>
-        <p class="lead mb-0"><a href="#" class="text-white fw-bold banner-button">${this.textLink}</a></p>
+        <p class="lead mb-0"><a href="https://www.southpark.lat/" target= "_blank" class="text-white fw-bold banner-button">${this.textLink}</a></p>
 
         `)
     }

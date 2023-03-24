@@ -15,7 +15,7 @@ export default {
         },
         {
             name: "Toallin",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
+            href: "https://southpark.fandom.com/es/wiki/Toall%C3%ADn",
         },
         {
             name: "Kenny",
@@ -23,19 +23,19 @@ export default {
         },
         {
             name: "Kyle",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
+            href: "https://southpark.fandom.com/es/wiki/Kyle_Broflovski",
         },
         {
             name: "Token",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
+            href: "https://southpark.fandom.com/es/wiki/Tolkien_Black",
         },
         {
             name: "Chef",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
+            href: "https://southpark.fandom.com/es/wiki/Chef_se_Vuelve_Loco",
         },
         {
             name: "Tweek",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
+            href: "https://southpark.fandom.com/es/wiki/Tweek_Tweak",
         },
     ],
 

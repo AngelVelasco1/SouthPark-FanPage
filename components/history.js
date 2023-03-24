@@ -13,8 +13,7 @@ export default {
         <ul><li>${this.list}</li>
         <li>${this.list2}</li>
         </ul>
-        <img src="${this.imgCreators}"  class="col-md-11 img-fluid mx-auto d-block" alt="">
-
+        <img src="${this.imgCreators}"  class="col-md-11 img-fluid mx-auto d-block rounded" alt="">
         `)
     }
 }
