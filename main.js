@@ -3,6 +3,10 @@ import myBanner from "./components/myBanner.js";
 import aside from "./components/aside.js";
 import mainCarrousel from "./components/mainCarrousel.js";
 
+import history from "./components/history.js";
+
+import footer from "./components/footer.js";
+
 header.listarCharacters();
 header.listarTitle();
 
@@ -11,4 +15,9 @@ myBanner.showBannerInfo();
 
 aside.showAside();
 
-mainCarrousel.showCarrousel(); //
+mainCarrousel.showCarrousel();
+mainCarrousel.showImages();
+
+history.showHistory();
+
+footer.showFooter();

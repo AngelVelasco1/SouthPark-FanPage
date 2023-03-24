@@ -5,32 +5,73 @@ export default {
                 paragraph: "The character of Butters Stotch was originally intended to be a one-time character, but he proved to be so popular with the show's creators and viewers that he became a regular character on the show. In fact, Butters has appeared in more episodes than some of the show's original main characters like Kenny and Chef. Additionally."
             },
           {
-            title: "HI",
+            title: "Seasons",
             link: [
                 {
-                    name: "DSSD",
+                    name: "Season 1",
                     href: "#",
                 },
                 {
-                    name: "SDS",
+                    name: "Season 2",
                     href: "#",
                 },
                 {
-                    name: "saddas",
+                    name: "Season 3",
                     href: "#",   
                 },
                 {
-                    name: "sadas",
+                    name: "Season 4",
                     href: "#",
                 },
                 {
-                    name: "asd",
+                    name: "Season 5",
                     href: "#",   
-                }
+                },
+                {
+                  name: "Season 6",
+                  href: "#",   
+              },
+              {
+                name: "Season 7",
+                href: "#",   
+            },
+            {
+              name: "Season 8",
+              href: "#",   
+          },
+          {
+            name: "Season 9",
+            href: "#",   
+        },
+        {
+          name: "Season 10",
+          href: "#",   
+      }
             ],
         
-        
         },
+        {
+          title: "Products",
+          link: [
+            {
+                name: "VideoGames",
+                href: "#",
+            },
+            {
+                name: "Dools",
+                href: "#",
+            },
+            {
+                name: "Merchan",
+                href: "#",   
+            },
+            {
+              name: "Movies",
+              href: "#",   
+          },
+            
+        ],
+        }
      ],
      showAside() {
        const data = this.nav.map((val, id) =>{
