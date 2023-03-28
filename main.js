@@ -11,8 +11,8 @@ import footer from "./components/footer.js";
 header.showHeader();
 
 
-myBanner.showBannerImage();
-myBanner.showBannerInfo();
+myBanner.showBanner();
+myBanner.showImage();
 
 aside.showAside();
 

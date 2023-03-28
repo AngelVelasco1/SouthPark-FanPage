@@ -1,4 +1,4 @@
-export let wkHeader = {
+let wkHeader = {
     listTitle(element){
         return `<a class="blog-header-logo">${element.name}</a>`
     },

@@ -50,7 +50,7 @@ export default {
 
         /* Enviar mensajes al worker con postMessage */
         /* id push title */
-        worker.postMessage({module: "listTitle", data: this.title})
+        worker.postMessage({module: "listTitle", data: this.title});
         /* id push characters */
         worker.postMessage({module: "listCharacters", data: this.characters})
 
