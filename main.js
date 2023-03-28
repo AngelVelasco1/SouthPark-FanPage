@@ -8,8 +8,8 @@ import awards from "./components/awards.js";
 
 import footer from "./components/footer.js";
 
-header.listarCharacters();
-header.listarTitle();
+header.showHeader();
+
 
 myBanner.showBannerImage();
 myBanner.showBannerInfo();

@@ -1,47 +1,50 @@
-/* stylelint-disable selector-list-comma-newline-after */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
- body {
-    font-family: 'Nunito', sans-seif;    
-    background-image:linear-gradient(to bottom, rgb(253, 195, 195), rgb(252, 252, 203))
-
-  }
-.carousel-control-prev-icon {
-  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+body {
+  font-family: 'Nunito', sans-seif;
+  background-image: linear-gradient(to bottom, rgb(253, 195, 195), rgb(252, 252, 203))
 }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-   .banner-button {
-    --bg: rgb(57, 15, 15);
-    --hover-bg: rgb(255, 163, 163);
-    --hover-text: #000;
-    color: #fff;
-    border-radius: 4px;
-    padding: 0.5em 1.5em;
-    background: var(--bg);
-    transition: 0.4s;
-   }
-  .banner-button:hover {
-    color: var(--hover-text);
-  transform: translate(-0.25rem,-0.25rem);
+
+.banner-button {
+  --bg: rgb(57, 15, 15);
+  --hover-bg: rgb(255, 163, 163);
+  --hover-text: #000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1.5em;
+  background: var(--bg);
+  transition: 0.4s;
+}
+
+.banner-button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
   background: var(--hover-bg);
   box-shadow: 0.3rem 0.3rem #fff;
-  }
-  
+}
+
 .button:active {
   transform: translate(0);
   box-shadow: none;
 }
+
 a {
   color: rgb(132, 86, 86);
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s ease;
 }
+
 a:hover {
   color: rgb(57, 15, 15);
 }
@@ -60,6 +63,7 @@ a:hover {
     font-size: 3.5rem;
   }
 }
+
 .blog-header {
   line-height: 1;
   border-bottom: 2px solid rgb(87, 0, 0);
@@ -77,22 +81,30 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-seif;    
-  font-weight:bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-seif;
+  font-weight: bold;
   color: rgb(61, 3, 3);
 
-  
+
 }
+
 .display-5 {
   font-size: 3.6rem;
   font-weight: 700;
 }
+
 .display-4 {
   font-size: 2.5rem;
-  font-family: 'Nunito', sans-seif;    
-  font-weight:bold;
+  font-family: 'Nunito', sans-seif;
+  font-weight: bold;
 }
+
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
@@ -104,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   height: 2.75rem;
   overflow-y: hidden;
-  
+
 }
 
 .nav-scroller .nav {
@@ -123,16 +135,19 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 
 }
+
 .header_link {
   font-family: 'Poppins';
-  color:rgb(87, 0, 0);
+  color: rgb(87, 0, 0);
   font-size: 1.15rem;
   transition: 0.4s ease-out;
 }
+
 .header_link:hover {
-    color:rgb(160, 64, 64);
-    transform: scale(1.1);
+  color: rgb(160, 64, 64);
+  transform: scale(1.1);
 }
+
 .nav-scroller .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -150,16 +165,22 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
+.h-250 {
+  height: 250px;
+}
+
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 {
+    height: 250px;
+  }
 }
 
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
 }
-.blog-pagination > .btn {
+
+.blog-pagination>.btn {
   border-radius: 2rem;
 }
 
@@ -169,14 +190,17 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;
 }
+
 #imgBanner {
   background-size: cover;
   background-position: center;
@@ -191,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #727272;
   text-align: center;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
@@ -199,40 +224,42 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.3rem;
 }
 
-#title  {
+#title {
   padding: 0 10px;
   text-transform: uppercase;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
   background-size: 100% 10px;
   background-repeat: no-repeat;
   background-position: 100% 0%;
-   transition: background-size .7s, background-position .5s ease-in-out;
+  transition: background-size .7s, background-position .5s ease-in-out;
 
 }
+
 #title:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
+
 .table {
   --bs-table-color: var(--bs-body-color);
---bs-table-bg: transparent;
---bs-table-border-color: rgb(57, 15, 15);
---bs-table-accent-bg: transparent;
---bs-table-striped-color: var(--bs-body-color);
---bs-table-striped-bg: rgba(0, 0, 0, 0.05);
---bs-table-active-color: var(--bs-body-color);
---bs-table-active-bg: rgba(0, 0, 0, 0.1);
---bs-table-hover-color: var(--bs-body-color);
---bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-width: 100%;
-margin-bottom: 1rem;
-color: var(--bs-table-color);
-vertical-align: top;
-border-color: var(--bs-table-border-color);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: rgb(57, 15, 15);
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: var(--bs-body-color);
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: var(--bs-body-color);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--bs-table-color);
+  vertical-align: top;
+  border-color: var(--bs-table-border-color);
 }
+
 #carouselExampleCaptions {
-  background-color: rgba(255, 214, 138, 0.781)!important;
+  background-color: rgba(255, 214, 138, 0.781) !important;
 }
-  
