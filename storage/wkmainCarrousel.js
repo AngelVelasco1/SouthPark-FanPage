@@ -2,8 +2,7 @@ let wkCarrousel = {
     listCarrousel(element) {
         let template = "";
         element.forEach((val, id) => {
-            template +=   
-            `
+            template +=    `
             <div class="col-md-6"   >
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-white" id="cards">
               <div class="col p-4 d-flex flex-column position-static" >
