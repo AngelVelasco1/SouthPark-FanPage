@@ -51,10 +51,7 @@ export default {
  
       },
 
-      showImages() {
-   
-
-      }
+  
 
 
 }

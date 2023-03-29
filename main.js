@@ -17,7 +17,6 @@ myBanner.showImage();
 aside.showAside();
 
 mainCarrousel.showCarrousel();
-mainCarrousel.showImages();
 
 history.showHistory();
 awards.showAwards();

@@ -206,7 +206,10 @@ h6 {
   background-position: center;
 
 }
-
+#img-carousel {
+  background-size: cover;
+  background-position: center;
+} 
 /*
  * Footer
  */
