@@ -1,9 +1,14 @@
 export default {
-    table: [
+    introduction: [
         {
             title: "Awards",
             paragraph: "South park has won numerous awards and recognitions throughout its history. Let's see the most important awards that have accompanied this great animated series.",
-            titleTable: "Most Important Awards",
+            titleTable: "Most Important Awards",      
+        }
+       
+    ],
+    table: [
+        {    
             thead: [
                 {
                     name: "Award",
@@ -43,8 +48,6 @@ export default {
                     description: "Make Love, Not Warcraft",
                 },
             ],
-        
-
         }
 
     ],
@@ -52,44 +55,20 @@ export default {
 
 
     showAwards() {
-        let template = "";
-        this.table.forEach((val, id) => {
-            template += `
-            <article class="blog-post">
+        const worker = new Worker("storage/wkAwards.js", {type: "module"});
 
-            <h2 class="blog-post-title">${val.title}</h2>
-  
-            <p class="dark-text">${val.paragraph}</p>
-         
-            <h3>${val.titleTable}</h3>
+        let id = [];
+        let count = 0;
 
-            <table class="table">
+        worker.postMessage({ module: "showIntroduction", data: this.introduction });
+        worker.postMessage({ module: "showTable", data: this.table });
+        id = ["#awards", "#awards"];
 
-              <thead>
-                <tr>
-                ${val.thead.map((val, id) => `
-                <th>${val.name}</th>`).join("")}
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                ${val.tbody.map((val, id) => `
-                <tr>
-                    <td>${val.award}</td>
-                    <td>${val.age}</td>
-                    <td>${val.description}</td>
-                </tr>
-                </tr>`).join("")}
-              </tbody>
-
-            </table>
-  
-    
-          </article>
-            `
+        worker.addEventListener("message", (e) => {
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector(id[count]).append(...doc.body.children);
+            (id.length - 1 === count) ? worker.terminate() : count++;
         })
-    document.querySelector('#awards').insertAdjacentHTML("beforeend", template)
     }
 
 }

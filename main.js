@@ -19,6 +19,7 @@ aside.showAside();
 mainCarrousel.showCarrousel();
 
 history.showHistory();
+
 awards.showAwards();
 
 footer.showFooter();
