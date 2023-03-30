@@ -1,13 +1,19 @@
 export default {
-    copyright: 'Build With',
-    by: "Angel Velasco",
-    buildWith: "Bootstrap",
+    footer: {
+        copyright: 'Build With',
+        by: "Angel Velasco",
+        buildWith: "Bootstrap",
 
+    },
+ 
     showFooter() {
-        document.querySelector('#footer').insertAdjacentHTML('beforeend', `
-        <p class="p-footer">${this.copyright} <a href="https://getbootstrap.com/">${this.buildWith}</a> by <a
-        href="https://angel-velasco.vercel.app">${this.by}</a>.</p>
-    <p>
-        `) 
+        const worker = new Worker("storage/wkFooter.js", {type: "module"});
+        worker.postMessage({module: "listFooter", data: this.footer});
+        
+        worker.addEventListener("message", (e) => {
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector("#footer").append(...doc.body.children);
+            worker.terminate();
+        })
     }
 }
