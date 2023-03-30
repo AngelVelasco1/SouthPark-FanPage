@@ -1,46 +1,10 @@
+import config from "../storage/config.js"
 export default {
-    title: {
-        name: "south park",
-    },
-    characters: [
-        {
-            name: "Cartman",
-            href: "https://southpark.fandom.com/es/wiki/Eric_Cartman",
-        },
-        {
-            name: "Butters",
-            href: "https://southpark.fandom.com/es/wiki/Butters_Stotch",
-        },
-        {
-            name: "Stan",
-            href: "https://southpark.fandom.com/es/wiki/Stan_Marsh",
-        },
-        {
-            name: "Toallin",
-            href: "https://southpark.fandom.com/es/wiki/Toall%C3%ADn",
-        },
-        {
-            name: "Kenny",
-            href: "https://southpark.fandom.com/es/wiki/Kenny_McCormick",
-        },
-        {
-            name: "Kyle",
-            href: "https://southpark.fandom.com/es/wiki/Kyle_Broflovski",
-        },
-        {
-            name: "Token",
-            href: "https://southpark.fandom.com/es/wiki/Tolkien_Black",
-        },
-        {
-            name: "Chef",
-            href: "https://southpark.fandom.com/es/wiki/Chef_se_Vuelve_Loco",
-        },
-        {
-            name: "Tweek",
-            href: "https://southpark.fandom.com/es/wiki/Tweek_Tweak",
-        },
-    ],
+   
     showHeader() {
+        config.dataHeader();
+        Object.assign(this, JSON.parse(localStorage.getItem("Header")));
+
         /* Creamos y llamamos el worker */
         const worker = new Worker("storage/wkHeader.js", {type: "module"});
 

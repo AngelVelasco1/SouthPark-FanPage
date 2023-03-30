@@ -1,62 +1,12 @@
+import config from "../storage/config.js"
+
 export default {
-    introduction: [
-        {
-            title: "Awards",
-            paragraph: "South park has won numerous awards and recognitions throughout its history. Let's see the most important awards that have accompanied this great animated series.",
-            titleTable: "Most Important Awards",      
-        }
-       
-    ],
-    table: [
-        {    
-            thead: [
-                {
-                    name: "Award",
-                },
-                {
-                    name: "Age",
-                },
-                {
-                    name: "By",
-
-                }
-            ],
-            tbody: [
-                {
-                    award: "100 Better tv series all time",
-                    age: "2000",
-                    description: "Magazine Time",
-                },
-                {
-                    award: "Peabody Award",
-                    age: "2006",
-                    description: "Peabody",
-                },
-                {
-                    award: "Top 10 Best Series",
-                    age: "2013",
-                    description: "Magazine Tv Guide",
-                },
-                {
-                    award: "Best animated Serie Emmie",
-                    age: "2005",
-                    description: "«Best Friends Forever»",
-                },
-                {
-                    award: "Emmy",
-                    age: "2006",
-                    description: "Make Love, Not Warcraft",
-                },
-            ],
-        }
-
-    ],
-
-
-
+    
     showAwards() {
-        const worker = new Worker("storage/wkAwards.js", {type: "module"});
-
+        config.dataAwards();
+        Object.assign(this, JSON.parse(localStorage.getItem("Awards")));
+    const worker = new Worker("storage/wkAwards.js", {type: "module"});
+    
         let id = [];
         let count = 0;
 

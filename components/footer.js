@@ -1,12 +1,11 @@
+import config from "../storage/config.js"
 export default {
-    footer: {
-        copyright: 'Build With',
-        by: "Angel Velasco",
-        buildWith: "Bootstrap",
-
-    },
+    
  
     showFooter() {
+        config.dataFooter();
+        Object.assign(this, JSON.parse(localStorage.getItem("Footer")));
+
         const worker = new Worker("storage/wkFooter.js", {type: "module"});
         worker.postMessage({module: "listFooter", data: this.footer});
         
